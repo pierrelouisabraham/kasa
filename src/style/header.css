@@ -1,0 +1,17 @@
+.header {
+    display:flex;
+    justify-content: space-between;
+}
+
+.menu_header{
+    display: flex;
+    justify-content: space-around;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #FF6060;
+    
+}
