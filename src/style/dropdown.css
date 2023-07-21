@@ -1,0 +1,39 @@
+.dropdown {
+    text-align: center;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .menu.open {
+    height: auto;
+  }
+  
+  .menu-toggle {
+    display: block;
+    padding: 10px 20px;
+    background-color: #444;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .menu-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-items li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+  }
