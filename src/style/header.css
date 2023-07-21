@@ -1,6 +1,16 @@
-.header {
+.logo {
     display:flex;
     justify-content: space-between;
+    width: 1240px;
+    height: 68px;
+    top: 40px;
+    left: 100px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: center;
 }
 
 .menu_header{
@@ -13,5 +23,5 @@
     letter-spacing: 0em;
     text-align: right;
     color: #FF6060;
-    
+    width: 30%;
 }

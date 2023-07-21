@@ -1,0 +1,29 @@
+.image-with-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+
+}
+
+.image-with-text img {
+    width: 1224px;
+    height: 223px;
+    background: #000;
+    mix-blend-mode: darken;
+    border-radius: 25px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.text-section {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 68.448px */
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 90%;
+}
