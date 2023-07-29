@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Banner from '../composants/header';
 import UnderHeader from '../composants/UnderHeader';
 import "../style/thumb.css"
+import Footer from '../composants/footer';
 
 function Listing({ accommodation }) {
   return (
@@ -26,7 +27,7 @@ const Home = ({ accommodations }) => {
         <Listing key={accommodation.id} accommodation={accommodation} />
       ))}
     </section>
-
+        <Footer/>
     </div>
   
   );

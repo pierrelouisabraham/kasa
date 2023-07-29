@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom';
 import Carrousel from '../composants/Carrouselle';
 import Banner from '../composants/header';
 import Footer from '../composants/footer';
-import "../style/accomodation-details.css"
-import Tag from '../composants/Tag'
+import "../style/accomodation-details.css";
+import Tag from "../composants/tag"
 
 const AccommodationDetail = ({ accommodations }) => {
   const { id } = useParams();
