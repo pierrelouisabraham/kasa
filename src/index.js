@@ -1,19 +1,21 @@
-import React from "react";
+import React from 'react';
+import { BrowserRouter, Route, Routes  } from 'react-router-dom';
+import HomePage from './pages/homepage';
+import NotFoundPage from './pages/NotFound';
+import jsonData from './ressources/data.json'
 import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes } from 'react-router-dom';
-import Banner from './composants/header';
-import UnderHeader from './composants/UnderHeader';
-import Homepage from './pages/json'
-
+import AccommodationDetails from './pages/AccommodationDetails';
+import AboutPage from './pages/About';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <BrowserRouter>
-  <Banner/>
-  <Homepage/>
-  <UnderHeader/>
-  </BrowserRouter>
-);
-
-reportWebVitals();
+const accommodations = jsonData;
+root.render( 
+    <BrowserRouter>
+      <Routes>
+        <Route path="/kasa" element={<HomePage accommodations={accommodations} />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/kasa/accommodation/:id" element={<AccommodationDetails accommodations={accommodations} />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </BrowserRouter>
+  );

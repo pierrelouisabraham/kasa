@@ -1,0 +1,14 @@
+.tag {
+    border-radius: 10px;
+background: #FF6060;
+color: #FFF;
+text-align: center;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 142.6%;
+width: 6%;
+    height: 25px;
+    margin-right: 1%;
+}

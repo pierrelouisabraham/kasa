@@ -1,13 +1,27 @@
 .thumbnail{
-    width: 340px;
+    display: flex;
+    width: 33%;
+    margin-top: 2%;
     height: 340px;
-    flex-shrink: 0;
     border-radius: 10px;
+    justify-content: center;
+}
+
+.thumbnail-section {
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    background: #F6F6F6;
+    flex-wrap: wrap;
+    margin: 2% 2% 2% 10%;
+    width: 80%;
 }
 
 .img-thumb{
     object-fit: cover;
     overflow: hidden;
+    width: 340px;
+    height: 340px;
 }
 
 .title{

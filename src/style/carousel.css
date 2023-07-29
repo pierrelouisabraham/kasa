@@ -1,0 +1,19 @@
+.carousel {
+    display: flex;
+    justify-content: center; 
+    margin-top: 2%;
+}
+
+.prev {
+    position: relative;
+    left: 2%;
+    height: 4%;
+    margin-top: 20%;
+}
+
+.next {
+    position: relative;
+    right: 2%;
+    height: 4%;
+    margin-top: 20%;
+}

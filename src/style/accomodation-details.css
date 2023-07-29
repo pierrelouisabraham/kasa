@@ -1,0 +1,58 @@
+.title-accomodation {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    width: 70%;
+    margin: 0;
+}
+
+.location {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+}
+
+.owner {
+    display: flex;
+    width: 30%;
+    flex-direction: row;    
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.details {
+    display: flex;
+    margin-top: 1%;
+    margin-right: 2%;
+    margin-left: 11%;
+}
+
+.portrait {
+    width: 22%;
+    height: 63%;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-left: 11%;
+}
+
+.owner-name {
+    color: #FF6060;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+}
+
