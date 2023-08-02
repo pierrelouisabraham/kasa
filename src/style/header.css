@@ -19,6 +19,18 @@
     line-height: 34px;
     letter-spacing: 0em;
     text-align: right;
-    color: #FF6060;
     width: 30%;
+}
+
+.link {
+    text-decoration: none;
+    color: #FF6060;
+}
+
+.menu_about {
+    color: #FF6060;
+}
+
+.menu_home {
+    color: #FF6060;
 }

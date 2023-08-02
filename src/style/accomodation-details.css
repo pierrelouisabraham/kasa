@@ -56,3 +56,20 @@
     line-height: 142.6%;
 }
 
+.tags-and-stars {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    margin-right: 12%;
+    margin-left: 11%;
+
+}
+
+.tags-div {
+    display: flex;
+}
+
+.dropdowns {
+    display: flex;
+    
+}

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "../style/carousel.css"
+import arrowLeft from "../ressources/arrow_back.png"
+import arrowRight from "../ressources/arrow_forward.png"
 
 const Carousel = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -22,9 +24,15 @@ const Carousel = ({ images }) => {
 
   return (
     <div className="carousel">
-      <button className='prev' onClick={handlePrev}>&lt;</button>
-      <img src={images[currentImageIndex]} alt={`${currentImageIndex + 1}`} />
-      <button className='next' onClick={handleNext}>&gt;</button>
+      <img
+        className="prev"
+        src={arrowLeft}
+        alt="chevron gauche" onClick={handlePrev}/>
+      <img className='image-carroussel' src={images[currentImageIndex]} alt={`${currentImageIndex + 1}`} />
+      <img
+        className="next"
+        src={arrowRight}
+        alt="chevron droite" onClick={handleNext}/>
     </div>
   );
 };

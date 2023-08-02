@@ -5,18 +5,22 @@ import Banner from '../composants/header';
 import Footer from '../composants/footer';
 import "../style/accomodation-details.css";
 import Tag from "../composants/tag"
+import Stars from "../composants/Stars"
+import NotFound from './NotFound';
+import Dropdown from '../composants/dropdown';
 
 const AccommodationDetail = ({ accommodations }) => {
   const { id } = useParams();
   const accommodation = accommodations.find(acc => acc.id === id);
-  const { title, cover, pictures, description, host, rating, location, equipments, tags } = accommodation;
   if (!accommodation) {
-    return <div>Accommodation not found.</div>;
+    return <NotFound/>;
   }
-
+  const { title, cover, pictures, description, host, rating, location, equipments, tags } = accommodation;
+  console.log(description)
+  console.log(rating);
   return (
     <div>
-        <Banner/>
+        <Banner underline={false} lineThrough={false}/>
         <Carrousel images={ pictures}/>
         <section className='details'>
             <div className='info'>
@@ -31,14 +35,21 @@ const AccommodationDetail = ({ accommodations }) => {
             
         </section>
         <div className='tags-and-stars'>
-            {tags.map((tag, index) => (
+          <div className='tags-div'>
+          {tags.map((tag, index) => (
           <Tag key={index} text={tag} />
         ))}
-                
+          </div>
+          
+          <Stars rating={rating}/>
             </div>
-
-        <p className='description'>{accommodation.description}</p>
-        <p>Rating: {accommodation.rating}</p>
+        
+      
+        <div className='dropdowns'>
+          <Dropdown title="Description" options={description}/>
+          <Dropdown title="Equipements" options={equipments}/>
+        </div>
+       
         
        
         <Footer/>

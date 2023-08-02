@@ -1,20 +1,35 @@
 .carousel {
-    display: flex;
-    justify-content: center; 
-    margin-top: 2%;
+    width: 98%;
     height: 415px;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    margin-top: 2%;
+    justify-content: center;
 }
 
+.image-carroussel {
+    height: 100%;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
 .prev {
-    position: relative;
-    left: 2%;
-    height: 4%;
-    margin-top: 20%;
+    left: 3%;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    height: 79px;
+    cursor: pointer;
 }
 
 .next {
-    position: relative;
-    right: 2%;
-    height: 4%;
-    margin-top: 20%;
+    right: 3%;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    height: 79px;
+    cursor: pointer;    
 }

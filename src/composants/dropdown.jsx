@@ -1,24 +1,41 @@
 import React, { useState } from 'react';
-import './dropdown.css';
+import arrowUp from '../ressources/arrow_up.png'
+import arrowDown from '../ressources/arrow_down.png'
+import "../style/dropdown.css"
 
-const Dropdown = (props) => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const data = props;
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+const Dropdown = ({ title, options }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [setSelectedOption] = useState(options[0]);
+
+  const handleOptionChange = (event) => {
+    setSelectedOption(event.target.value);
   };
 
   return (
-    <div className="dropdown">
-      <nav className={`menu ${menuOpen ? 'open' : ''}`}>
-        <button className="menu-toggle" onClick={toggleMenu}>
-          Equipements
-        </button>
-        <ul className="menu-items">
-
-        </ul>
-      </nav>
-
+    <div className="dropdown-container">
+      <div className="dropdown">
+        <span>{title}</span>
+        <img
+          src={isOpen ? arrowUp : arrowDown}
+          alt="arrow"
+          onClick={() => setIsOpen(!isOpen)}
+        />
+      </div>
+      {isOpen ? (
+        typeof options === 'string' ? (
+        <div className='description'>
+        <p onClick={() => setSelectedOption(options)}>{options}</p>
+        </div>
+         ) : (
+          <div className='description' onChange={handleOptionChange}>
+            {options.map((option, index) => (
+              <option key={index} value={option}>
+                {option}
+              </option>
+            ))}
+          </div>
+        )
+      ) : null}
     </div>
   );
 };

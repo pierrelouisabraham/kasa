@@ -4,6 +4,7 @@ import Banner from '../composants/header';
 import UnderHeader from '../composants/UnderHeader';
 import "../style/thumb.css"
 import Footer from '../composants/footer';
+import NotFound from './NotFound';
 
 function Listing({ accommodation }) {
   return (
@@ -16,10 +17,12 @@ function Listing({ accommodation }) {
 }
 
 const Home = ({ accommodations }) => {
-
+  if (!accommodations ) {
+    return <NotFound/>
+  }
   return (
     <div>
-      <Banner/>
+      <Banner underline={true} lineThrough={false}/>
       <UnderHeader/>
       <section className='thumbnail-section'>
       
