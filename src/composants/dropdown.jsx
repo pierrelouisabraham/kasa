@@ -24,7 +24,7 @@ const Dropdown = ({ title, options }) => {
       {isOpen ? (
         typeof options === 'string' ? (
         <div className='description'>
-        <p onClick={() => setSelectedOption(options)}>{options}</p>
+        <p >{options}</p>
         </div>
          ) : (
           <div className='description' onChange={handleOptionChange}>
