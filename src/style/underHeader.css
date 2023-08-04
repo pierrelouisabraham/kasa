@@ -27,3 +27,15 @@
     border-radius: 5px;
     max-width: 90%;
 }
+
+@media screen and (max-width: 748px) {
+    .text-section {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    }
+}

@@ -7,7 +7,8 @@
 
 .header {
     display: flex;
-    justify-content: center;
+    margin-left: 10%;   
+    width: 80%;
 }
 
 .menu_header{
@@ -19,12 +20,23 @@
     line-height: 34px;
     letter-spacing: 0em;
     text-align: right;
-    width: 30%;
+    width: 50%;
+    align-items: center;
 }
 
 .link {
     text-decoration: none;
     color: #FF6060;
+}
+
+.link h1 {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: right;
+    
 }
 
 .menu_about {
@@ -33,4 +45,20 @@
 
 .menu_home {
     color: #FF6060;
+}
+
+@media screen and (max-width: 748px) {
+    .link h1 {
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0em;
+
+    }
+    .logo img {
+        width: 145px;
+height: 47px;
+
+    }
 }

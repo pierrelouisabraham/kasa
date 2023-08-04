@@ -2,7 +2,7 @@ import React from 'react';
 import Headers from '../composants/header'
 import UnderHeader from '../composants/UnderHeader';
 import Dropdown from '../composants/dropdown';
-
+import "../style/about.css";
 
     const titleFiabilité = 'Fiabilité';
     const descriptionFiabilité=
@@ -23,7 +23,7 @@ const AboutPage = () => {
       <Headers underline={false} lineThrough={true} />
       <UnderHeader/>
     </div>
-    <div>
+    <div className='dropdowns'>
       <Dropdown title={titleFiabilité} options={descriptionFiabilité}/>
       <Dropdown title={titleRespect} options={descriptionRespect}/>
       <Dropdown title={titleService} options={descriptionService}/>

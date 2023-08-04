@@ -12,10 +12,13 @@ function Banner({ underline, lineThrough }) {
       
     return (
         
-        <><div className='header'><div className="logo"><img src={logo} alt="logo" />
+        <><div className='header'>
+          <div className="logo">
+            <img src={logo} alt="logo" />
+            </div>
             <div className="menu_header"><Link className="link" style={homeStyles} to={`/kasa`}><h1 className="menu_home">Accueil</h1></Link>
             <Link className="link" style={aboutStyles} to={`/about`}><h1 className="menu_about">A propos</h1></Link>
-            </div>
+            
             </div>
             </div></>
         );

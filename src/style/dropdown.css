@@ -12,10 +12,11 @@
   height: 47px;
   z-index: 1;
 }
+
 .dropdown-container {
   display: flex;
   flex-direction: column;
-  width: 100%; 
+  width: 48%;
 }
   
 
@@ -59,4 +60,8 @@
   .menu-items li {
     padding: 10px;
     border-bottom: 1px solid #555;
+  }
+
+  @media screen and (max-width: 748px) {
+
   }

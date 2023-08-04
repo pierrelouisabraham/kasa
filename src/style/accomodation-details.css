@@ -20,27 +20,28 @@
 
 .owner {
     display: flex;
-    width: 30%;
-    flex-direction: row;    
+    width: 100%;
+    flex-direction: row;
+   
 }
 
 .info {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 100%;
+    width: 75%;
 }
 
 .details {
     display: flex;
     margin-top: 1%;
-    margin-right: 2%;
     margin-left: 11%;
+    width: 80%;
 }
 
 .portrait {
-    width: 22%;
-    height: 63%;
+    width: 39%;
+    height: 64px;
     border-radius: 50%;
     flex-shrink: 0;
     margin-left: 11%;
@@ -56,12 +57,10 @@
     line-height: 142.6%;
 }
 
-.tags-and-stars {
+.owner-and-stars {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    margin-top: 1%;
-    margin-right: 12%;
-    margin-left: 11%;
 
 }
 
@@ -71,5 +70,52 @@
 
 .dropdowns {
     display: flex;
+    width: 80%;
+    margin-top: 1%;
+    margin-left: 10%;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 748px) {
+    .details{
+        flex-direction: column;
+    }
+    .portrait {
+        width: 32px;
+        height: 32px;
+
+
+    }
+    .owner-and-stars{
+        flex-direction: row-reverse;
+    }
+    .stars img {
+        width: 18px;
+        height: 18px;
+    }
+    .stars {
+        display: flex;
+        align-items: center;
+    }
+    .title-accomodation{
+        font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    }
+    .owner{
+        width: 50%;
+        align-items: center;
+    }
+    .dropdowns {
+        flex-direction: column;
+        margin-bottom: 1%;
+    }
+    .dropdown-container{
+        margin-bottom: 2%;
+    }
     
 }

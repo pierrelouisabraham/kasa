@@ -26,23 +26,25 @@ const AccommodationDetail = ({ accommodations }) => {
             <div className='info'>
                 <h2 className='title-accomodation'>{title}</h2>
                 <p className='location'>{location}</p>
+                <div className='tags-div'>
+          {tags.map((tag, index) => (
+          <Tag key={index} text={tag} />
+        ))}
+          </div>
             </div>
+            <div className='owner-and-stars'>
             <div className='owner'>
                 <h3 className='owner-name'>{host.name}</h3>
                 <img className='portrait' src={host.picture} alt={host.name} />
                 
             </div>
+          
+            <Stars rating={rating}/>
+  </div>
+
             
         </section>
-        <div className='tags-and-stars'>
-          <div className='tags-div'>
-          {tags.map((tag, index) => (
-          <Tag key={index} text={tag} />
-        ))}
-          </div>
-          
-          <Stars rating={rating}/>
-            </div>
+
         
       
         <div className='dropdowns'>

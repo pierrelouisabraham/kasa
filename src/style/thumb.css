@@ -15,9 +15,11 @@
     flex-wrap: wrap;
     margin: 2% 2% 2% 10%;
     width: 80%;
+    justify-content: space-between;
 }
 
 .img-thumb{
+    display: flex;
     object-fit: cover;
     overflow: hidden;
     width: 340px;
@@ -25,16 +27,55 @@
 }
 
 .title{
-    width: 300px;
+    
     color: #FFF;
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 142.6%; /* 25.668px */
+    line-height: 142.6%; 
     position: absolute;
-    text-align: center;
     padding: 20px;
     border-radius: 5px;
-    max-width: 90%;
+    max-width: 20%;
+    margin-top: 18%;
+}
+
+@media screen and (max-width: 1024px) {
+    .thumbnail{
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .thumbnail{
+        display: flex;
+        width: 100%;
+        margin-top: 2%;
+        height: 340px;
+        border-radius: 10px;
+        justify-content: center;
+    }
+    .title {
+        width: 300px;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        position: absolute;
+        border-radius: 5px;
+        margin-top: 30%;
+    }
+    .img-thumb{
+        width: 336px;
+    }
+    .thumbnail-section {
+        width: 80%;
+        margin-top: 2%;
+        margin-left: 10%;
+        background-color: #FFF;
+    }
 }
