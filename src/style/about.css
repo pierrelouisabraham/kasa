@@ -10,3 +10,19 @@
  width: 100%;
  margin-top: 3%;
 }
+
+.image{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.image img {
+    width: 80%;
+    height: 223px;
+    background: #000;
+    mix-blend-mode: darken;
+    border-radius: 25px;
+    overflow: hidden;
+    object-fit: cover;
+}

@@ -1,8 +1,8 @@
 import React from 'react';
 import Headers from '../composants/header'
-import UnderHeader from '../composants/UnderHeader';
 import Dropdown from '../composants/dropdown';
 import "../style/about.css";
+import imageUnder from '../ressources/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png'
 
     const titleFiabilité = 'Fiabilité';
     const descriptionFiabilité=
@@ -21,7 +21,9 @@ const AboutPage = () => {
   return(
     <><div>
       <Headers underline={false} lineThrough={true} />
-      <UnderHeader/>
+      <div className='image'>
+        <img src={imageUnder} alt='imageUnder'/>
+       </div>
     </div>
     <div className='dropdowns'>
       <Dropdown title={titleFiabilité} options={descriptionFiabilité}/>
