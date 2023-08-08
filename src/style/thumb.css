@@ -1,81 +1,53 @@
-.thumbnail{
-    display: flex;
-    width: 33%;
-    margin-top: 2%;
-    height: 340px;
-    border-radius: 10px;
-    justify-content: center;
+.card{
+  border-radius: 10px;
+  height: 340px;
+  width: 340px;
+  background: rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  display: flex;
+  align-items: flex-end;
+  margin: 2%;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .thumbnail-section {
     display: flex;
-    flex-direction: row;
-    border-radius: 25px;
-    background: #F6F6F6;
     flex-wrap: wrap;
-    margin: 2% 2% 2% 10%;
-    width: 80%;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    margin-top: 30px;
+    padding: 30px;
+    max-width: 80%;
 }
 
-.img-thumb{
+.parent{
     display: flex;
-    object-fit: cover;
-    overflow: hidden;
-    width: 340px;
-    height: 340px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title{
-    
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 142.6%; 
-    position: absolute;
+    font-size: 18px;
+    line-height: 142.6%;
     padding: 20px;
-    border-radius: 5px;
-    max-width: 20%;
-    margin-top: 18%;
+    color: white;
 }
 
-@media screen and (max-width: 1024px) {
-    .thumbnail{
-        width: 45%;
-    }
 
-}
 
 @media screen and (max-width: 768px) {
-    .thumbnail{
-        display: flex;
+    .card {
+        margin: 20px 0 0 0;
+        height: 255px;
         width: 100%;
-        margin-top: 2%;
-        height: 340px;
-        border-radius: 10px;
-        justify-content: center;
-    }
-    .title {
-        width: 300px;
-        color: #FFF;
-        font-family: Montserrat;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 142.6%;
-        position: absolute;
-        border-radius: 5px;
-        margin-top: 30%;
-    }
-    .img-thumb{
-        width: 336px;
-    }
-    .thumbnail-section {
-        width: 80%;
-        margin-top: 2%;
-        margin-left: 10%;
-        background-color: #FFF;
-    }
+      }
+  
 }

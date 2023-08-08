@@ -15,11 +15,11 @@ const AccommodationDetail = ({ accommodations }) => {
   if (!accommodation) {
     return <NotFound/>;
   }
-  const { title, cover, pictures, description, host, rating, location, equipments, tags } = accommodation;
+  const { title, pictures, description, host, rating, location, equipments, tags } = accommodation;
   console.log(description)
   console.log(rating);
   return (
-    <div>
+    <div className='parent'>
         <Banner underline={false} lineThrough={false}/>
         <Carrousel images={ pictures}/>
         <section className='details'>

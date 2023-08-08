@@ -35,8 +35,8 @@
 .details {
     display: flex;
     margin-top: 1%;
-    margin-left: 11%;
-    width: 80%;
+    width: 98%;
+    justify-content: center;
 }
 
 .portrait {
@@ -64,6 +64,25 @@
 
 }
 
+.stars {
+    display: flex;
+    .star {
+      height: 30px;
+      width: 30px;
+      margin-right: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 748px) {
+    .stars {
+      .star {
+        height: 15px;
+        width: 15px;
+        margin-right: 5px;
+      }
+    }
+  }
+
 .tags-div {
     display: flex;
 }
@@ -72,10 +91,15 @@
     display: flex;
     width: 80%;
     margin-top: 1%;
-    margin-left: 10%;
     justify-content: space-around;
     margin-bottom: 3%;
 }
+
+.dropdown-container{
+    width: 100%;
+}
+
+
 
 @media screen and (max-width: 748px) {
     .details{
@@ -87,6 +111,9 @@
 
 
     }
+
+    
+
     .owner-and-stars{
         flex-direction: row-reverse;
     }
@@ -100,11 +127,11 @@
     }
     .title-accomodation{
         font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: left;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
 
     }
     .owner{

@@ -3,6 +3,7 @@ import Headers from '../composants/header'
 import Dropdown from '../composants/dropdown';
 import "../style/about.css";
 import imageUnder from '../ressources/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png'
+import Footer from '../composants/footer';
 
     const titleFiabilité = 'Fiabilité';
     const descriptionFiabilité=
@@ -19,18 +20,20 @@ import imageUnder from '../ressources/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png'
       "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.";
 const AboutPage = () => {
   return(
-    <><div>
+    <><div className='parent'>
       <Headers underline={false} lineThrough={true} />
       <div className='image'>
         <img src={imageUnder} alt='imageUnder'/>
        </div>
-    </div>
-    <div className='dropdowns'>
+       <div className='dropdowns'>
       <Dropdown title={titleFiabilité} options={descriptionFiabilité}/>
       <Dropdown title={titleRespect} options={descriptionRespect}/>
       <Dropdown title={titleService} options={descriptionService}/>
       <Dropdown title={titleSécurité} options={descriptionSécurité}/>
     </div>
+    </div>
+
+    <Footer/>
     </>
   ); 
 };

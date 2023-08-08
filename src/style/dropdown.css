@@ -25,6 +25,8 @@
   width: 100%;
   background-color: #F6F6F6;
   color: #FF6060;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
   .menu {
     position: absolute;
@@ -60,6 +62,36 @@
   .menu-items li {
     padding: 10px;
     border-bottom: 1px solid #555;
+  }
+
+  .description p{
+    margin-top: -5px;
+   
+   
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 142.6%;
+  }
+
+  .description option {
+    margin-top: -5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+   
+    padding-left: 15px;
+    padding-right: 15px;
+   
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 142.6%;
   }
 
   @media screen and (max-width: 748px) {
