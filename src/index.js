@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes  } from 'react-router-dom';
 import HomePage from './pages/homepage';
-import NotFoundPage from './pages/NotFound';
 import jsonData from './ressources/data.json'
 import ReactDOM from 'react-dom/client';
 import AccommodationDetails from './pages/AccommodationDetails';

@@ -100,4 +100,24 @@
     .dropdowns .dropdown-container{
       width: 80%;
     }
+
+    .description p {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: left;
+
+    }
+
+    .description option {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: left;
+
+    }
   }

@@ -1,4 +1,3 @@
-import logo from '../ressources/LOGO.png'
 import '../style/header.css'
 
 function background(props) {

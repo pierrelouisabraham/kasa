@@ -10,6 +10,7 @@
     justify-content: space-around;
     z-index: 2;
     position: relative;
+    top: 144px;
   }
   
  
@@ -37,7 +38,8 @@
 
   @media screen and (max-width: 748px) {
     .footer{
-      position: fixed;
+      
+      top: 0;
     }
   }
 

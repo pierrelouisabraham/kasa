@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 80%;
+    margin-bottom: 2%;
 }
 
 
@@ -34,6 +35,9 @@
     align-items: center;
 }
 
+.footer{
+    top: 287px;
+}
 @media screen and (max-width: 748px)  {
     
 }
