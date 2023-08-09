@@ -33,3 +33,22 @@
     height: 79px;
     cursor: pointer;    
 }
+
+.counter {
+    position: absolute;
+    top: 360px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+@media screen and (max-width: 748px)  {
+    .counter {
+        display: none;
+    }
+}

@@ -25,7 +25,7 @@ const AboutPage = () => {
       <div className='image'>
         <img src={imageUnder} alt='imageUnder'/>
        </div>
-       <div className='dropdowns'>
+       <div className='dropdowns-about'>
       <Dropdown title={titleFiabilité} options={descriptionFiabilité}/>
       <Dropdown title={titleRespect} options={descriptionRespect}/>
       <Dropdown title={titleService} options={descriptionService}/>

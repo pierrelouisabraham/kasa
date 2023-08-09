@@ -89,9 +89,9 @@
 
 .dropdowns {
     display: flex;
-    width: 80%;
+    width: 81%;
     margin-top: 1%;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 3%;
 }
 
@@ -104,6 +104,7 @@
 @media screen and (max-width: 748px) {
     .details{
         flex-direction: column;
+        align-items: center;
     }
     .portrait {
         width: 32px;
@@ -111,11 +112,15 @@
 
 
     }
+    .location {
+        font-size: 14px ;
+    }
 
     
 
     .owner-and-stars{
         flex-direction: row-reverse;
+        width: 80%;
     }
     .stars img {
         width: 18px;
@@ -125,6 +130,7 @@
         display: flex;
         align-items: center;
     }
+
     .title-accomodation{
         font-family: Montserrat;
         font-size: 18px;
@@ -144,8 +150,12 @@
         margin-bottom: 1%;
         
     }
-    .dropdown-container{
+    .dropdowns .dropdown-container{
         margin-bottom: 2%;
+        width: 100%;
+    }
+    .info {
+        width: 80%;
     }
     
 }

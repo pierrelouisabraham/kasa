@@ -4,7 +4,7 @@ import Carrousel from '../composants/Carrouselle';
 import Banner from '../composants/header';
 import Footer from '../composants/footer';
 import "../style/accomodation-details.css";
-import Tag from "../composants/tag"
+import Tag from '../composants/Tag';
 import Stars from "../composants/Stars"
 import NotFound from './NotFound';
 import Dropdown from '../composants/dropdown';
@@ -16,8 +16,7 @@ const AccommodationDetail = ({ accommodations }) => {
     return <NotFound/>;
   }
   const { title, pictures, description, host, rating, location, equipments, tags } = accommodation;
-  console.log(description)
-  console.log(rating);
+
   return (
     <div className='parent'>
         <Banner underline={false} lineThrough={false}/>
