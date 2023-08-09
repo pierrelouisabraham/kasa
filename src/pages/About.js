@@ -31,9 +31,10 @@ const AboutPage = () => {
       <Dropdown title={titleService} options={descriptionService}/>
       <Dropdown title={titleSécurité} options={descriptionSécurité}/>
     </div>
+    <Footer/>
     </div>
 
-    <Footer/>
+   
     </>
   ); 
 };
