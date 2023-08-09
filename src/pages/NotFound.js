@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "../style/not-found.css"
+import Footer from '../composants/footer';
 
 const NotFound = () => {
   return (
@@ -12,7 +13,9 @@ const NotFound = () => {
     <Link className="link" to="/kasa">
       Retourner sur la page d’accueil
     </Link>
+    <Footer/>
   </section>
+  
   );
 };
 
