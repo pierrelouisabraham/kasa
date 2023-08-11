@@ -1,17 +1,17 @@
-.card{
-  border-radius: 10px;
-  height: 340px;
-  width: 340px;
-  background: rgba(255, 255, 255, 0);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: darken;
-  display: flex;
-  align-items: flex-end;
-  margin: 2%;
-  cursor: pointer;
-  text-decoration: none;
+.card {
+    border-radius: 10px;
+    height: 340px;
+    width: 340px;
+    background: rgba(255, 255, 255, 0);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    display: flex;
+    align-items: flex-end;
+    margin: 2%;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .thumbnail-section {
@@ -26,28 +26,34 @@
     max-width: 80%;
 }
 
-.parent{
+.parent {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.title{
+.title {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 142.6%;
     padding: 20px;
     color: white;
+    font-family: 'Montserrat';
 }
 
 
 
 @media screen and (max-width: 768px) {
+
+    .thumbnail-section {
+        background-color: transparent;
+    }
+
     .card {
         margin: 20px 0 0 0;
         height: 255px;
         width: 100%;
-      }
-  
+    }
+
 }

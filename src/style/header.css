@@ -1,20 +1,22 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
+
 .logo {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     width: 80%;
     height: 68px;
 }
 
 .header {
-    display: flex; 
+    display: flex;
     width: 80%;
+    padding: 30px;
 }
 
-.menu_header{
+.menu_header {
     display: flex;
     font-family: Montserrat;
     font-size: 24px;
@@ -34,12 +36,12 @@ body{
 
 .link h1 {
     font-family: Montserrat;
-    font-size: 24px;    
+    font-size: 24px;
     font-weight: 500;
     line-height: 34px;
     letter-spacing: 0em;
     text-align: right;
-    
+
 }
 
 .menu_about {
@@ -58,12 +60,14 @@ body{
         line-height: 17px;
         letter-spacing: 0em;
     }
+
     .logo img {
         width: 145px;
         height: 47px;
 
     }
-    .menu_header{
+
+    .menu_header {
         width: 40%;
     }
 }

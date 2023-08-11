@@ -33,7 +33,7 @@ const Carousel = ({ images }) => {
         />
       )}
       <img className='image-carroussel' src={images[currentImageIndex]} alt={`${currentImageIndex + 1}`} />
-      {images.length > 1 && ( 
+      {images.length > 1 && (
         <img
           className="next"
           src={arrowRight}
@@ -41,11 +41,12 @@ const Carousel = ({ images }) => {
           onClick={handleNext}
         />
       )}
-      <p className="counter">
-        {currentImageIndex + 1} / {images.length}
-      </p>
+      {images.length > 1 ?
+        (<p className="counter">
+          {currentImageIndex + 1} / {images.length}
+        </p>) : (<></>)}
     </div>
-    
+
   );
 };
 

@@ -22,7 +22,7 @@
     display: flex;
     width: 100%;
     flex-direction: row;
-   
+
 }
 
 .info {
@@ -35,8 +35,8 @@
 .details {
     display: flex;
     margin-top: 1%;
-    width: 98%;
-    justify-content: center;
+    width: 80%;
+    justify-content: space-between;
 }
 
 .portrait {
@@ -66,22 +66,23 @@
 
 .stars {
     display: flex;
+
     .star {
-      height: 30px;
-      width: 30px;
-      margin-right: 10px;
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
     }
-  }
-  
-  @media screen and (max-width: 748px) {
+}
+
+@media screen and (max-width: 748px) {
     .stars {
-      .star {
-        height: 15px;
-        width: 15px;
-        margin-right: 5px;
-      }
+        .star {
+            height: 15px;
+            width: 15px;
+            margin-right: 5px;
+        }
     }
-  }
+}
 
 .tags-div {
     display: flex;
@@ -95,43 +96,47 @@
     margin-bottom: 3%;
 }
 
-.dropdown-container{
+.dropdown-container {
     width: 100%;
 }
 
 
 
 @media screen and (max-width: 748px) {
-    .details{
+    .details {
         flex-direction: column;
-        align-items: center;
+        align-items: self-start;
     }
+
     .portrait {
         width: 32px;
         height: 32px;
 
 
     }
+
     .location {
-        font-size: 14px ;
+        font-size: 14px;
     }
 
-    
 
-    .owner-and-stars{
+
+    .owner-and-stars {
         flex-direction: row-reverse;
         width: 80%;
     }
+
     .stars img {
         width: 18px;
         height: 18px;
     }
+
     .stars {
         display: flex;
         align-items: center;
     }
 
-    .title-accomodation{
+    .title-accomodation {
         font-family: Montserrat;
         font-size: 18px;
         font-weight: 500;
@@ -140,22 +145,26 @@
         text-align: left;
 
     }
-    .owner{
+
+    .owner {
         width: 34%;
 
         align-items: center;
     }
+
     .dropdowns {
         flex-direction: column;
         margin-bottom: 1%;
-        
+
     }
-    .dropdowns .dropdown-container{
+
+    .dropdowns .dropdown-container {
         margin-bottom: 2%;
         width: 100%;
     }
+
     .info {
         width: 80%;
     }
-    
+
 }
